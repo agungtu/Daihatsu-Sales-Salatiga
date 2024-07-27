@@ -27,6 +27,9 @@ import "../styles/color/color-default.css";
 // Global Responsive Styles
 import "../styles/css/responsive.css";
 
+// Custom styles
+import "../styles/css/Custom.scss";
+
 import Head from "next/head";
 import React from "react";
 import GoTop from "../components/Common/GoTop";

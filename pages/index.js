@@ -14,6 +14,7 @@ import AppDownload from "../components/HomeSixteen/AppDownload";
 import Blog from "../components/HomeSixteen/Blog";
 import ContactForm from "../components/Common/ContactForm";
 import Footer from "../components/Common/Footer";
+import Vehicles from "../components/HomeSixteen/Vehicles";
 
 const HomeSixteen = () => {
   return (
@@ -33,7 +34,8 @@ const HomeSixteen = () => {
 
       <Testimonial />
 
-      <Pricing />
+      {/* <Pricing /> */}
+      <Vehicles />
 
       <Faq />
 
