@@ -1,6 +1,6 @@
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper/modules";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import Image from "next/image";
 
 const screenshotsData = [
@@ -41,37 +41,34 @@ const Screenshots = () => {
             pagination={{
               clickable: true,
             }}
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+            }}
             spaceBetween={30}
             breakpoints={{
               0: {
                 slidesPerView: 1,
               },
-              600: {
+              768: {
                 slidesPerView: 2,
               },
-              768: {
-                slidesPerView: 3,
-              },
-              1200: {
-                slidesPerView: 4,
-              },
             }}
-            modules={[Navigation, Pagination]}
+            modules={[Navigation, Pagination, Autoplay]}
             className="screenshot-slider"
           >
-            {screenshotsData &&
-              screenshotsData.map((value, i) => (
-                <SwiperSlide key={i}>
-                  <div className="screenshot-item">
-                    <Image
-                      src={value.image}
-                      alt="Screenshot Image"
-                      width={300}
-                      height={533}
-                    />
-                  </div>
-                </SwiperSlide>
-              ))}
+            {screenshotsData.map((value, i) => (
+              <SwiperSlide key={i}>
+                <div className="screenshot-item">
+                  <Image
+                    src={value.image}
+                    alt="Screenshot Image"
+                    width={800}
+                    height={600}
+                  />
+                </div>
+              </SwiperSlide>
+            ))}
           </Swiper>
         </div>
       </section>

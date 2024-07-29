@@ -1,22 +1,53 @@
-import React from "react"; 
+import React from "react";
+import Image from "next/image";
 
 const NewsletterForm = () => {
   return (
     <>
+      <style jsx>{`
+        .footer-top {
+          position: relative;
+          width: auto;
+          height: 50vh;
+          overflow: hidden;
+        }
+
+        .full-screen-image {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
+
+        @media (max-width: 768px) {
+          .footer-top {
+            height: 30vh;
+          }
+        }
+
+        @media (max-width: 480px) {
+          .footer-top {
+            height: 10vh;
+          }
+        }
+      `}</style>
       <div className="footer-top">
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
               <div className="subscribe-text">
-                <h3>Subscribe for our Newsletter</h3>
-                <p>
-                  Lorem ipsum madolor sit amet, consectetur adipisicing elit,
-                  sed do eiusmod tempor coli incididunt ut labore Lorem ipsum
-                  madolor sit amet, consectetur adipisicing incididunt.
-                </p>
+                <div className="full-screen-image">
+                  <Image
+                    src="/images/team/sss.png"
+                    alt="Team Member Image"
+                    layout="fill"
+                    objectFit="cover"
+                  />
+                </div>
               </div>
 
-              <div className="subscribe-form">
+              {/* <div className="subscribe-form">
                 <form className="newsletter-form">
                   <input
                     type="email"
@@ -30,7 +61,7 @@ const NewsletterForm = () => {
                     <i className="icofont-paper-plane"></i>
                   </button>
                 </form>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

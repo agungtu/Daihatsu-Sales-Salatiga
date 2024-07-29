@@ -51,11 +51,22 @@ const ContactForm = () => {
 
   return (
     <>
-      <section id="contact" className="contact-section gray-bg">
-        <div className="container">
+      <style jsx>
+        {`
+          .tezx {
+            color: white;
+          }
+        `}
+      </style>
+      <section
+        id="contact"
+        className="contact-section "
+        style={{ backgroundColor: "black" }}
+      >
+        <div className="container wave-bg-section-tb-two">
           <div className="section-title">
             <h2 className="text-danger">Hubungi Kami</h2>
-            <p>Hubungi kami jika anda membutuhkan bantuan</p>
+            <p className="tezx">Hubungi kami jika anda membutuhkan bantuan</p>
           </div>
 
           <div className="row justify-content-center">
@@ -63,7 +74,7 @@ const ContactForm = () => {
               <div className="single-contact-info">
                 <i className="icofont-location-pin"></i>
                 <h3>Alamat Kantor Kami :</h3>
-                <p>
+                <p className="tezx">
                   Jalan Osamaliki Sidorejo Lor Sidomukti, Sidorejo Lor, Kec.
                   Sidorejo, Kota Salatiga, Jawa Tengah 50711
                 </p>
@@ -73,21 +84,21 @@ const ContactForm = () => {
             <div className="col-md-4 col-lg-4 col-sm-6">
               <div className="single-contact-info">
                 <i className="icofont-envelope"></i>
-                <h3>E-mail : </h3>
-                <p>Satriyo@gmail.com</p>
+                <h3 className="tezx">E-mail : </h3>
+                <p className="tezx">Satriyo@gmail.com</p>
               </div>
             </div>
 
             <div className="col-md-4 col-lg-4 col-sm-6">
               <div className="single-contact-info">
                 <i className="icofont icofont-phone"></i>
-                <h3>Nomor Telepon :</h3>
-                <p>085647647883</p>
+                <h3 className="tezx">Nomor Telepon :</h3>
+                <p className="tezx">085647647883</p>
               </div>
             </div>
           </div>
 
-          <div className="row">
+          {/* <div className="row">
             <div className="col-lg-12 col-md-12">
               <div className="contact-form">
                 <form onSubmit={handleSubmit}>
@@ -168,7 +179,7 @@ const ContactForm = () => {
                 </form>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
     </>

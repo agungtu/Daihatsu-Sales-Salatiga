@@ -19,30 +19,10 @@ const Navigation = () => {
       }
     };
 
-    const mainNavLinks = document.querySelectorAll("nav ul li a");
-
-    // const handleActiveLink = () => {
-    //   const fromTop = window.scrollY;
-    //   mainNavLinks.forEach((link) => {
-    //     const section = document.querySelector(link.hash);
-    //     if (
-    //       section.offsetTop <= fromTop &&
-    //       section.offsetTop + section.offsetHeight > fromTop
-    //     ) {
-    //       link.classList.add("active");
-    //     } else {
-    //       link.classList.remove("active");
-    //     }
-    //   });
-    // };
-
-    // document.addEventListener("scroll", handleScroll);
-    // window.addEventListener("scroll", handleActiveLink);
-
-    // return () => {
-    //   document.removeEventListener("scroll", handleScroll);
-    //   window.removeEventListener("scroll", handleActiveLink);
-    // };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
 
   const image = [
@@ -53,7 +33,7 @@ const Navigation = () => {
 
   const renderMenus = () => {
     return (
-      <ul className="navbar-nav ms-auto">
+      <ul className="navbar-nav ms-auto rounded-5">
         <li className="nav-item">
           <AnchorLink
             onClick={toggleNavbar}
@@ -64,83 +44,46 @@ const Navigation = () => {
             New Cars
           </AnchorLink>
         </li>
-
         <li className="nav-item">
           <AnchorLink
             onClick={toggleNavbar}
             offset={() => -30}
             className="nav-link"
-            href="#about"
+            href="#shop"
           >
-            Shoping Tool
+            Shopping Tool
           </AnchorLink>
         </li>
-
         <li className="nav-item">
           <AnchorLink
             onClick={toggleNavbar}
             offset={() => -30}
             className="nav-link"
-            href="#features"
+            href="#price-list"
           >
             Price List
           </AnchorLink>
         </li>
-
         <li className="nav-item">
           <AnchorLink
             onClick={toggleNavbar}
             offset={() => -30}
             className="nav-link"
-            href="#screenshots"
+            href="#promo"
           >
             Promo
           </AnchorLink>
         </li>
-
         <li className="nav-item">
           <AnchorLink
             onClick={toggleNavbar}
             offset={() => -30}
             className="nav-link"
-            href="#pricing"
+            href="#news"
           >
             News
           </AnchorLink>
         </li>
-
-        {/* <li className="nav-item">
-          <AnchorLink
-            onClick={toggleNavbar}
-            offset={() => -30}
-            className="nav-link"
-            href="#faqs"
-          >
-            Faqs
-          </AnchorLink>
-        </li>
-
-        <li className="nav-item">
-          <AnchorLink
-            onClick={toggleNavbar}
-            offset={() => -30}
-            className="nav-link"
-            href="#blog"
-          >
-            Blog
-          </AnchorLink>
-        </li>
-
-        <li className="nav-item">
-          <AnchorLink
-            onClick={toggleNavbar}
-            offset={() => -30}
-            className="nav-link"
-            href="#contact"
-          >
-            Contact
-          </AnchorLink>
-        </li> */}
       </ul>
     );
   };
@@ -154,6 +97,15 @@ const Navigation = () => {
 
   return (
     <div>
+      <style jsx>{`
+        #navbar {
+          background-color: darkred;
+        }
+
+        #navbar.menu-shrink {
+          background-color: darkred;
+        }
+      `}</style>
       <nav
         id="navbar"
         className="navbar fixed-top navbar-expand-md navbar-light top-menu"
@@ -163,6 +115,7 @@ const Navigation = () => {
           {image &&
             image.map((value, i) => (
               <Image
+                key={i}
                 src={value.image}
                 alt="App Mockup image"
                 width={200}

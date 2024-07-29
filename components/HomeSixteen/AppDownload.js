@@ -16,11 +16,17 @@ const AppDownload = () => {
             data-aos-duration="800"
             data-aos-delay="200"
           >
-            <h2>NOW AVAILABLE</h2>
+            <h2 className="text-danger">BANG YOYO</h2>
             <p>
-              Lorem ipsum madolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor coli incididunt ut labore Lorem ipsum madolor sit
-              amet, consectetur adipisicing incididunt.
+              Perkenalkan saya Yoyo, merupakan salah satu sales Dealer Daihatsu
+              Salatiga yang siap membantu anda dalam membeli unit kendaraan
+              idaman anda. Saya akan berusaha untuk :
+            </p>
+            <p className="pt-5" style={{ textAlign: "justify" }}>
+              1. Memastikan Unit Kendaraan selalu ready <br></br>2. Memberikan
+              informasi detail <br></br> 3. unit kendaraan Memberikan Dp Ringan
+              dan Murah
+              <br></br>4. Memastikan anda puas dan tidak mengecewakan
             </p>
           </div>
 
@@ -37,13 +43,12 @@ const AppDownload = () => {
                   className="download-btn"
                   target="_blank"
                 >
-                  <i className="icofont-brand-apple"></i>
                   <span>
-                    available on
-                    <span className="large-text">App Store</span>
+                    Hubungi
+                    <span className="large-text">085647452265332</span>
                   </span>
                 </a>
-                <a
+                {/* <a
                   href="https://play.google.com/store/apps"
                   className="download-btn"
                   target="_blank"
@@ -53,7 +58,7 @@ const AppDownload = () => {
                     available on
                     <span className="large-text">Play Store</span>
                   </span>
-                </a>
+                </a> */}
               </div>
             </div>
           </div>

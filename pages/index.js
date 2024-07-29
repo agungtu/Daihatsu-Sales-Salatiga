@@ -32,12 +32,12 @@ const HomeSixteen = () => {
 
       <Screenshots />
 
-      <Testimonial />
+      {/* <Testimonial /> */}
 
       {/* <Pricing /> */}
       <Vehicles />
 
-      <Faq />
+      {/* <Faq /> */}
 
       <Team />
 

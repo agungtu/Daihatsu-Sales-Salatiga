@@ -26,7 +26,7 @@ const Blog = () => {
                 data-aos-delay="100"
               >
                 <div className="blog-img">
-                  <Link href="/blog/details">
+                  <Link href="#">
                     <Image
                       src="/images/berita 1.jpg"
                       alt="Blog Post Image"
@@ -41,14 +41,14 @@ const Blog = () => {
 
                 <div className="blog-info">
                   <h6 className="blog-title">
-                    <Link href="/blog/details">
+                    <Link href="#">
                       Daihatsu Gelar Workshop Goes to Campus di UGM
                     </Link>
                   </h6>
 
                   <p>Sejalan dengan tagline Daihatsu Sahabatku</p>
 
-                  <Link href="/blog/details" className="default-button">
+                  <Link href="#" className="default-button">
                     Read More
                     <i className="icofont-swoosh-right"></i>
                   </Link>
@@ -60,11 +60,11 @@ const Blog = () => {
               <div
                 className="single-blog-post-two"
                 data-aos="fade-in"
-                data-aos-duration="800"
-                data-aos-delay="200"
+                data-aos-duration="200"
+                data-aos-delay="50"
               >
                 <div className="blog-img">
-                  <Link href="/blog/details">
+                  <Link href="#">
                     <Image
                       src="/images/berita 2.jpg"
                       alt="Blog Post Image"
@@ -79,14 +79,14 @@ const Blog = () => {
 
                 <div className="blog-info">
                   <h6 className="blog-title">
-                    <Link href="/blog/details">
+                    <Link href="#">
                       Daihatsu Resmi Meluncurkan Penyegaran New Terios
                     </Link>
                   </h6>
 
                   <p>Daihatsu resmi meluncurkan penyegaran New Terios</p>
 
-                  <Link href="/blog/details" className="default-button">
+                  <Link href="#" className="default-button">
                     Read More
                     <i className="icofont-swoosh-right"></i>
                   </Link>
@@ -98,11 +98,11 @@ const Blog = () => {
               <div
                 className="single-blog-post-two"
                 data-aos="fade-in"
-                data-aos-duration="800"
-                data-aos-delay="300"
+                data-aos-duration="200"
+                data-aos-delay="50"
               >
                 <div className="blog-img">
-                  <Link href="/blog/details">
+                  <Link href="#">
                     <Image
                       src="/images/berita 3.jpg"
                       alt="Blog Post Image"
@@ -117,7 +117,7 @@ const Blog = () => {
 
                 <div className="blog-info">
                   <h6 className="blog-title">
-                    <Link href="/blog/details">
+                    <Link href="#">
                       Daihatsu Hadir Ramaikan GAIKINDO Jakarta Auto Week
                     </Link>
                   </h6>

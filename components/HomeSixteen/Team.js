@@ -3,11 +3,11 @@ import Image from "next/image";
 
 const teamMemberData = [
   {
-    image: "/images/team/1.jpg",
-    name: "Steve Roberts",
-    designation: "CEO & Fouder",
-    shortText:
-      "Lorem ipsum madolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.",
+    image: "/images/team/bang yo.jpeg",
+    name: "Bang Yoyo",
+    designation: "Sales Marketing Spesialist",
+    // shortText:
+    //   "Lorem ipsum madolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.",
     socialLinks: [
       {
         icon: "icofont-facebook",
@@ -25,52 +25,6 @@ const teamMemberData = [
     duration: "800",
     delay: "100",
   },
-  {
-    image: "/images/team/2.jpg",
-    name: "John Marshall",
-    designation: "UI/UX Designer",
-    shortText:
-      "Lorem ipsum madolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.",
-    socialLinks: [
-      {
-        icon: "icofont-facebook",
-        link: "https://www.facebook.com/",
-      },
-      {
-        icon: "icofont-twitter",
-        link: "https://www.twitter.com/",
-      },
-      {
-        icon: "icofont-linkedin",
-        link: "https://www.linkedin.com/",
-      },
-    ],
-    duration: "800",
-    delay: "200",
-  },
-  {
-    image: "/images/team/3.jpg",
-    name: "Michael Cartney",
-    designation: "Front-End Developer",
-    shortText:
-      "Lorem ipsum madolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.",
-    socialLinks: [
-      {
-        icon: "icofont-facebook",
-        link: "https://www.facebook.com/",
-      },
-      {
-        icon: "icofont-twitter",
-        link: "https://www.twitter.com/",
-      },
-      {
-        icon: "icofont-linkedin",
-        link: "https://www.linkedin.com/",
-      },
-    ],
-    duration: "800",
-    delay: "300",
-  },
 ];
 
 const Team = () => {
@@ -86,9 +40,9 @@ const Team = () => {
           >
             <h2 className="text-danger">Hubungi Team Marketing Kami</h2>
             <p>
-              Lorem ipsum madolor sit amet, consectetur adipisicing elit, sed do
-              eiusmod tempor coli incididunt ut labore Lorem ipsum madolor sit
-              amet, consectetur adipisicing incididunt.
+              Tim marketing kami siap membantu Anda! Kami menawarkan berbagai
+              layanan pemasaran yang dapat disesuaikan dengan kebutuhan anda
+              serta memperoleh layanan isntan dalam membeli kendaraan anda.
             </p>
           </div>
 
@@ -106,12 +60,12 @@ const Team = () => {
                       <Image
                         src={value.image}
                         alt="Team Member Image"
-                        className="img-thumbnail"
+                        className="img-thumbnail rounded-circle"
                         width={370}
                         height={450}
                       />
 
-                      <div className="overlay">
+                      {/* <div className="overlay">
                         <div className="member-info">
                           <p>{value.shortText}</p>
 
@@ -123,7 +77,7 @@ const Team = () => {
                             ))}
                           </div>
                         </div>
-                      </div>
+                      </div> */}
                     </div>
 
                     <h4 className="member-name">{value.name}</h4>

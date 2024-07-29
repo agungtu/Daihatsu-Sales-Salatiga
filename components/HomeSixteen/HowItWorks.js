@@ -3,48 +3,50 @@ import FsLightbox from "fslightbox-react";
 import Image from "next/image";
 // import "./CardStyles.css"; // Pastikan Anda menyesuaikan jalur file ini dengan jalur file CSS Anda
 
-const howItWorksData = [
+const gambar2 = [
   {
-    // icon: "icofont-login",
-    title: "Tanya Pembelian",
-    text: "",
-    duration: "800",
-    delay: "100",
-  },
-  {
-    icon: "icofont-test-tube-alt",
-    title: "Booking Service",
-    // text: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.",
-    duration: "800",
-    delay: "200",
-  },
-  {
-    icon: "icofont-chart-histogram-alt",
-    title: "Simulasi Kredit",
-    // text: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.",
-    duration: "800",
-    delay: "300",
-  },
-  {
-    icon: "icofont-light-bulb",
+    image: "/images/team/Logo 4.svg",
     title: "Daftar Harga",
     // text: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.",
     duration: "800",
     delay: "400",
   },
   {
-    icon: "icofont-light-bulb",
+    image: "/images/team/Logo 5.svg",
     title: "Test Drive",
     // text: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.",
     duration: "800",
     delay: "400",
   },
   {
-    icon: "icofont-light-bulb",
+    image: "/images/team/Logo 6.svg",
     title: "Spare Part",
     // text: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.",
     duration: "800",
     delay: "400",
+  },
+];
+const howItWorksData = [
+  {
+    image: "/images/team/Logo 1.svg",
+    title: "Tanya Pembelian",
+    text: "",
+    duration: "800",
+    delay: "100",
+  },
+  {
+    image: "/images/team/Logo 2.svg",
+    title: "Booking Service",
+    // text: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.",
+    duration: "800",
+    delay: "200",
+  },
+  {
+    image: "/images/team/Logo 3.svg",
+    title: "Simulasi Kredit",
+    // text: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form.",
+    duration: "800",
+    delay: "300",
   },
 ];
 
@@ -122,6 +124,37 @@ const HowItWorks = () => {
                   key={i}
                 >
                   {/* <i className={value.icon}></i> */}
+                  <Image
+                    src={value.image}
+                    alt="Team Member Image"
+                    className="img-thumbnail rounded-4"
+                    width={370}
+                    height={450}
+                  />
+                  <h4 style={{ color: "red" }}>{value.title}</h4>
+                  {/* <p>{value.text}</p> */}
+                </div>
+              ))}
+            </div>
+          </div>
+          <div className="row align-items-center">
+            <div className="card-container">
+              {gambar2.map((value, i) => (
+                <div
+                  className="single-hiw-feature"
+                  data-aos="fade-in"
+                  data-aos-duration={value.duration}
+                  data-aos-delay={value.delay}
+                  key={i}
+                >
+                  {/* <i className={value.icon}></i> */}
+                  <Image
+                    src={value.image}
+                    alt="Team Member Image"
+                    className="img-thumbnail rounded-4"
+                    width={370}
+                    height={450}
+                  />
                   <h4 style={{ color: "red" }}>{value.title}</h4>
                   {/* <p>{value.text}</p> */}
                 </div>

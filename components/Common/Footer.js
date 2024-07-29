@@ -25,22 +25,22 @@ const Footer = () => {
                 <ul className="social-links">
                   <li>Follow us :</li>
                   <li>
-                    <a href="https://facebook.com/" target="_blank">
+                    <a href="#" target="_blank">
                       <i className="icofont-facebook"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="https://twitter.com/" target="_blank">
+                    <a href="#" target="_blank">
                       <i className="icofont-twitter"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="https://www.instagram.com/" target="_blank">
+                    <a href="#" target="_blank">
                       <i className="icofont-instagram"></i>
                     </a>
                   </li>
                   <li>
-                    <a href="https://www.pinterest.com/" target="_blank">
+                    <a href="#" target="_blank">
                       <i className="icofont-pinterest"></i>
                     </a>
                   </li>

@@ -67,7 +67,7 @@ const Counter = () => {
         }
       `}</style>
       <div id="counter">
-        <div className="wave-bg-section-tb-two"></div>
+        {/* <div className="wave-bg-section-tb-two"></div> */}
         <div className="container">
           <div className="row justify-content-center">
             <div className="text-center">
@@ -75,10 +75,10 @@ const Counter = () => {
             </div>
             <div className="slide-button mt-4">
               <a href="#" className="download-button">
-                <i className="button-icon"></i>
+                <i className="icofont icofont-phone"></i>
                 085647427024
               </a>
-              <a href="#" className="learn-more-button">
+              <a href="#" className="learn-more-button icofont icofont-phone">
                 0856542546335{" "}
               </a>
             </div>

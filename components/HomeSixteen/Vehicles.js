@@ -10,16 +10,20 @@ const Vehicles = () => {
   }, []);
   return (
     <>
-      <section id="pricing" className="pricing-section">
-        <div className="container">
+      <section
+        id="pricing"
+        className="pricing-section"
+        style={{ backgroundColor: "black" }}
+      >
+        <div className="container wave-bg-section-tb-two">
           <div
             className="section-title"
             data-aos="fade-up"
             data-aos-duration="800"
             data-aos-delay="100"
           >
-            <h2>Daihatsu Vehicles Model</h2>
-            <p>
+            <h2 style={{ color: "red" }}>Daihatsu Vehicles Model</h2>
+            <p className="text-white">
               Kami menyediakan produk unggulan daihatsu yang terbaik untuk
               keluarga anda.
             </p>
