@@ -11,7 +11,7 @@ const Vehicles = () => {
   return (
     <>
       <section
-        id="pricing"
+        id="vehicles"
         className="pricing-section"
         style={{ backgroundColor: "black" }}
       >

@@ -1,6 +1,7 @@
 import AOS from "aos";
 import "../node_modules/aos/dist/aos.css";
-import "../styles/css/bootstrap.min.css";
+// import "../styles/css/bootstrap.min.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/css/animate.css";
 import "swiper/css";
 import "swiper/css/bundle";

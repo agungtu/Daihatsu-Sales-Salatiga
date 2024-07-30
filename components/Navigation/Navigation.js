@@ -1,9 +1,13 @@
 import React, { useState, useEffect } from "react";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import Image from "next/image";
+import { routes } from "./routes";
+import Link from "next/link";
 
 const Navigation = () => {
   const [collapsed, setCollapsed] = useState(true);
+  const [isNavCollapsed, setIsNavCollapsed] = useState(true);
+  const handleNavCollapse = () => setIsNavCollapsed(!isNavCollapsed);
 
   const toggleNavbar = () => {
     setCollapsed(!collapsed);
@@ -34,15 +38,126 @@ const Navigation = () => {
   const renderMenus = () => {
     return (
       <ul className="navbar-nav ms-auto rounded-5">
-        <li className="nav-item">
+        {routes.map((value, i) => {
+          if (value.child)
+            return (
+              <li className="nav-item dropdown    ">
+                <AnchorLink
+                  onClick={toggleNavbar}
+                  offset={() => 100}
+                  className="nav-link active dropdown-toggle"
+                  href={`${value.path}`}
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  {value.name}
+                </AnchorLink>
+                <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                  {value.child.map((value, i) => (
+                    <li key={i}>
+                      <Link
+                        onClick={toggleNavbar}
+                        offset={() => -30}
+                        className="dropdown-item"
+                        href={`${value.path}`}
+                      >
+                        {value.name}
+                      </Link>
+                    </li>
+                  ))}
+                  {/* <li>
+                    <AnchorLink
+                      onClick={toggleNavbar}
+                      offset={() => -30}
+                      className="dropdown-item"
+                      href="/vehicles/sedans"
+                    >
+                      Sedans
+                    </AnchorLink>
+                  </li>
+                  <li>
+                    <AnchorLink
+                      onClick={toggleNavbar}
+                      offset={() => -30}
+                      className="dropdown-item"
+                      href="#suvs"
+                    >
+                      SUVs
+                    </AnchorLink>
+                  </li>
+                  <li>
+                    <AnchorLink
+                      onClick={toggleNavbar}
+                      offset={() => -30}
+                      className="dropdown-item"
+                      href="#trucks"
+                    >
+                      Trucks
+                    </AnchorLink>
+                  </li> */}
+                </ul>
+              </li>
+            );
+          return (
+            <li className="nav-item">
+              <AnchorLink
+                onClick={toggleNavbar}
+                offset={() => -30}
+                className="nav-link"
+                href="#shop"
+              >
+                Shopping Tool
+              </AnchorLink>
+            </li>
+          );
+        })}
+        {/* <li className="nav-item dropdown    ">
           <AnchorLink
             onClick={toggleNavbar}
             offset={() => 100}
-            className="nav-link active"
+            className="nav-link active dropdown-toggle"
             href="#home"
+            id="navbarDropdown"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
           >
             New Cars
           </AnchorLink>
+          <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li>
+              <AnchorLink
+                onClick={toggleNavbar}
+                offset={() => -30}
+                className="dropdown-item"
+                href="/vehicles/sedans"
+              >
+                Sedans
+              </AnchorLink>
+            </li>
+            <li>
+              <AnchorLink
+                onClick={toggleNavbar}
+                offset={() => -30}
+                className="dropdown-item"
+                href="#suvs"
+              >
+                SUVs
+              </AnchorLink>
+            </li>
+            <li>
+              <AnchorLink
+                onClick={toggleNavbar}
+                offset={() => -30}
+                className="dropdown-item"
+                href="#trucks"
+              >
+                Trucks
+              </AnchorLink>
+            </li>
+          </ul>
         </li>
         <li className="nav-item">
           <AnchorLink
@@ -59,7 +174,7 @@ const Navigation = () => {
             onClick={toggleNavbar}
             offset={() => -30}
             className="nav-link"
-            href="#price-list"
+            href="#vehicles"
           >
             Price List
           </AnchorLink>
@@ -83,7 +198,7 @@ const Navigation = () => {
           >
             News
           </AnchorLink>
-        </li>
+        </li> */}
       </ul>
     );
   };
