@@ -72,12 +72,17 @@ const ContactForm = () => {
           <div className="row justify-content-center">
             <div className="col-md-4 col-lg-4 col-sm-6">
               <div className="single-contact-info">
-                <i className="icofont-location-pin"></i>
-                <h3>Alamat Kantor Kami :</h3>
-                <p className="tezx">
-                  Jalan Osamaliki Sidorejo Lor Sidomukti, Sidorejo Lor, Kec.
-                  Sidorejo, Kota Salatiga, Jawa Tengah 50711
-                </p>
+                <a
+                  href="https://maps.app.goo.gl/wtoFwUQxyBzHrGcL8"
+                  target="_blank"
+                >
+                  <i className="icofont-location-pin"></i>
+                  <h3>Alamat Kantor Kami :</h3>
+                  <p className="tezx">
+                    Jalan Osamaliki Sidorejo Lor Sidomukti, Sidorejo Lor, Kec.
+                    Sidorejo, Kota Salatiga, Jawa Tengah 50711
+                  </p>
+                </a>
               </div>
             </div>
 
@@ -85,7 +90,7 @@ const ContactForm = () => {
               <div className="single-contact-info">
                 <i className="icofont-envelope"></i>
                 <h3 className="tezx">E-mail : </h3>
-                <p className="tezx">Satriyo@gmail.com</p>
+                <p className="tezx">Satriyowidiyantoro7@gmail.com</p>
               </div>
             </div>
 

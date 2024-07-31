@@ -132,11 +132,11 @@ const Navigation = () => {
     <div>
       <style jsx>{`
         #navbar {
-          background-color: darkred;
+          background-color: #ff3544;
         }
 
         #navbar.menu-shrink {
-          background-color: darkred;
+          background-color: #ff3544;
         }
       `}</style>
       <nav
