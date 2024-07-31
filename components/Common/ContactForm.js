@@ -96,9 +96,14 @@ const ContactForm = () => {
 
             <div className="col-md-4 col-lg-4 col-sm-6">
               <div className="single-contact-info">
-                <i className="icofont icofont-phone"></i>
-                <h3 className="tezx">Nomor Telepon :</h3>
-                <p className="tezx">6285642689355</p>
+                <a
+                  href="https://api.whatsapp.com/send?phone=6285642689355"
+                  target="_blank"
+                >
+                  <i className="icofont icofont-phone"></i>
+                  <h3 className="tezx">Nomor Telepon :</h3>
+                  <p className="tezx">6285642689355</p>
+                </a>
               </div>
             </div>
           </div>
