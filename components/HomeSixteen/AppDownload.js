@@ -16,7 +16,10 @@ const AppDownload = () => {
             data-aos-duration="800"
             data-aos-delay="200"
           >
-            <h2 className="text-danger">BANG YOYO</h2>
+            <div className="flex h2">
+              <span className="text-danger">YOYO</span> &nbsp;
+              <span className="text-white">Daihatsu</span>
+            </div>
             <p>
               Perkenalkan saya Yoyo, merupakan salah satu sales Dealer Daihatsu
               Salatiga yang siap membantu anda dalam membeli unit kendaraan
@@ -39,8 +42,8 @@ const AppDownload = () => {
                 data-aos-delay="300"
               >
                 <a
-                  href="https://www.apple.com/app-store/"
-                  className="download-btn"
+                  className=" download-btn"
+                  href="https://api.whatsapp.com/send?phone=6285642689355"
                   target="_blank"
                 >
                   <span>

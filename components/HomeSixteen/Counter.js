@@ -74,11 +74,19 @@ const Counter = () => {
               <h2 className="text-danger text-uppercase">Contact & Booking</h2>
             </div>
             <div className="slide-button mt-4">
-              <a href="#" className="download-button">
+              <a
+                href="https://api.whatsapp.com/send?phone=6285642689355"
+                target="_blank"
+                className="download-button"
+              >
                 <i className="icofont icofont-phone"></i>
-                085647427024
+                6285642689355
               </a>
-              <a href="#" className="learn-more-button icofont icofont-phone">
+              <a
+                href="https://api.whatsapp.com/send?phone=6285642689355"
+                target="_blank"
+                className="learn-more-button icofont icofont-phone"
+              >
                 0856542546335{" "}
               </a>
             </div>

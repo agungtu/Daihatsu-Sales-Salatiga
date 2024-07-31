@@ -5,7 +5,7 @@ import Image from "next/image";
 import Navigation from "../../components/Navigation/Navigation";
 import Footer from "../../components/Common/Footer";
 
-const Berita = [
+const Pricelist = [
   {
     feedbackText:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam justo neque, aliquet sit amet elementum vel, vehicula eget eros.",
@@ -14,8 +14,8 @@ const Berita = [
     image2: "/images/daihatsu-vehicles/2.png",
     image3: "/images/daihatsu-vehicles/3.png",
 
-    name: "Berita",
-    desc: "Berikut adalah berita mobil Daihatsu.",
+    name: "Price List",
+    desc: "Berikut adalah Price List mobil Daihatsu.",
   },
   //   {
   //     feedbackText:
@@ -40,7 +40,7 @@ const Berita = [
   //   },
 ];
 
-const Beritaa = () => {
+const PriceList = () => {
   return (
     <>
       <Navigation />
@@ -54,8 +54,8 @@ const Beritaa = () => {
         ></div>
       </section>
       <div className="container">
-        {Berita &&
-          Berita.map((value, i) => (
+        {Pricelist &&
+          Pricelist.map((value, i) => (
             <div className="testimonial-content">
               <div className="text-center">
                 <h2>{value.name}</h2>
@@ -83,4 +83,4 @@ const Beritaa = () => {
   );
 };
 
-export default Beritaa;
+export default PriceList;

@@ -46,6 +46,44 @@ export const routes = [
     ],
   },
   {
+    name: "Shoping Tool",
+    path: "#ShopingTools",
+    child: [
+      {
+        name: "Konsultasi Pembelian",
+        path: "https://api.whatsapp.com/send?phone=6285642689355",
+      },
+      {
+        name: "Booking Service",
+        path: "https://api.whatsapp.com/send?phone=6285642689355 target='_blank'",
+      },
+      {
+        name: "Simulasi Kredit",
+        path: "https://api.whatsapp.com/send?phone=6285642689355 target='_blank'",
+      },
+      {
+        name: "Test Drive",
+        path: "https://api.whatsapp.com/send?phone=6285642689355 target='_blank'",
+      },
+      {
+        name: "Tukar Tambah",
+        path: "https://api.whatsapp.com/send?phone=6285642689355 target='_blank'",
+      },
+      {
+        name: "Spare Part",
+        path: "https://api.whatsapp.com/send?phone=6285642689355 target='_blank'",
+      },
+    ],
+  },
+  {
+    name: "Pricelist",
+    path: "/pricelist",
+  },
+  {
+    name: "Promo",
+    path: "/promo",
+  },
+  {
     name: "News",
     path: "/berita",
   },

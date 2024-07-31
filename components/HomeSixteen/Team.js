@@ -4,8 +4,8 @@ import Image from "next/image";
 const teamMemberData = [
   {
     image: "/images/team/bang yo.jpeg",
-    name: "Bang Yoyo",
-    designation: "Sales Marketing Spesialist",
+    name: "Yoyo",
+    designation: "Daihatsu",
     // shortText:
     //   "Lorem ipsum madolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.",
     socialLinks: [
@@ -60,7 +60,7 @@ const Team = () => {
                       <Image
                         src={value.image}
                         alt="Team Member Image"
-                        className="img-thumbnail rounded-circle"
+                        className="img-thumbnail round"
                         width={370}
                         height={450}
                       />
@@ -79,9 +79,24 @@ const Team = () => {
                         </div>
                       </div> */}
                     </div>
-
-                    <h4 className="member-name">{value.name}</h4>
-                    <p className="designation">{value.designation}</p>
+                    <a
+                      href="https://api.whatsapp.com/send?phone=6285642689355"
+                      target="_blank"
+                    >
+                      {" "}
+                      <h4 className="member-name">{value.name}</h4>
+                      <p className="designation">{value.designation}</p>
+                      <button className="btn btn-danger">
+                        <a
+                          href="https://api.whatsapp.com/send?phone=6285642689355"
+                          target="_blank"
+                          className="download-button  text-white"
+                        >
+                          <i className="icofont icofont-phone"></i>
+                          6285642689355
+                        </a>{" "}
+                      </button>
+                    </a>
                   </div>
                 </div>
               ))}

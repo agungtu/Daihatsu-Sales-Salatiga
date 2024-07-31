@@ -48,8 +48,12 @@ const Blog = () => {
 
                   <p>Sejalan dengan tagline Daihatsu Sahabatku</p>
 
-                  <Link href="#" className="default-button">
-                    Read More
+                  <Link
+                    href="https://api.whatsapp.com/send?phone=6285642689355"
+                    target="_blank"
+                    className="default-button"
+                  >
+                    Hubungi
                     <i className="icofont-swoosh-right"></i>
                   </Link>
                 </div>
@@ -86,8 +90,12 @@ const Blog = () => {
 
                   <p>Daihatsu resmi meluncurkan penyegaran New Terios</p>
 
-                  <Link href="#" className="default-button">
-                    Read More
+                  <Link
+                    href="https://api.whatsapp.com/send?phone=6285642689355"
+                    target="_blank"
+                    className="default-button"
+                  >
+                    Hubungi
                     <i className="icofont-swoosh-right"></i>
                   </Link>
                 </div>
@@ -124,8 +132,12 @@ const Blog = () => {
 
                   <p>Daihatsu turut hadir meramaikan pameran otomotif</p>
 
-                  <Link href="/blog/details" className="default-button">
-                    Read More
+                  <Link
+                    href="https://api.whatsapp.com/send?phone=6285642689355"
+                    target="_blank"
+                    className="default-button"
+                  >
+                    Hubungi
                     <i className="icofont-swoosh-right"></i>
                   </Link>
                 </div>

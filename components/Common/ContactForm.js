@@ -93,7 +93,7 @@ const ContactForm = () => {
               <div className="single-contact-info">
                 <i className="icofont icofont-phone"></i>
                 <h3 className="tezx">Nomor Telepon :</h3>
-                <p className="tezx">085647647883</p>
+                <p className="tezx">6285642689355</p>
               </div>
             </div>
           </div>

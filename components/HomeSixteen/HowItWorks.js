@@ -30,7 +30,9 @@ const howItWorksData = [
   {
     image: "/images/team/Logo 1.svg",
     title: "Tanya Pembelian",
-    text: "",
+    // text: "https://api.whatsapp.com/send?phone=6285642689355",
+    // target: "_blank",
+
     duration: "800",
     delay: "100",
   },
@@ -124,15 +126,20 @@ const HowItWorks = () => {
                   key={i}
                 >
                   {/* <i className={value.icon}></i> */}
-                  <Image
-                    src={value.image}
-                    alt="Team Member Image"
-                    className="img-thumbnail rounded-4"
-                    width={370}
-                    height={450}
-                  />
-                  <h4 style={{ color: "red" }}>{value.title}</h4>
-                  {/* <p>{value.text}</p> */}
+                  <a
+                    href="https://api.whatsapp.com/send?phone=6285642689355"
+                    target="_blank"
+                  >
+                    <Image
+                      src={value.image}
+                      alt="Team Member Image"
+                      className="img-thumbnail rounded-4"
+                      width={370}
+                      height={450}
+                    />
+                    <h4 style={{ color: "red" }}>{value.title}</h4>
+                    {/* <p>{value.text}</p> */}
+                  </a>
                 </div>
               ))}
             </div>
@@ -147,15 +154,20 @@ const HowItWorks = () => {
                   data-aos-delay={value.delay}
                   key={i}
                 >
-                  {/* <i className={value.icon}></i> */}
-                  <Image
-                    src={value.image}
-                    alt="Team Member Image"
-                    className="img-thumbnail rounded-4"
-                    width={370}
-                    height={450}
-                  />
-                  <h4 style={{ color: "red" }}>{value.title}</h4>
+                  <a
+                    href="https://api.whatsapp.com/send?phone=6285642689355"
+                    target="_blank"
+                  >
+                    {" "}
+                    <Image
+                      src={value.image}
+                      alt="Team Member Image"
+                      className="img-thumbnail rounded-4"
+                      width={370}
+                      height={450}
+                    />
+                    <h4 style={{ color: "red" }}>{value.title}</h4>
+                  </a>
                   {/* <p>{value.text}</p> */}
                 </div>
               ))}
