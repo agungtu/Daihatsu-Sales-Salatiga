@@ -97,7 +97,7 @@ const VehicleType = () => {
           </div>
         </div>
         {data?.data?.spek?.map((index) => (
-          <div id="" style={{ width: "100%", maxHeight: "91vh" }}>
+          <div id="" style={{ width: "100%" }}>
             <img style={{}} src={index}></img>
           </div>
         ))}
