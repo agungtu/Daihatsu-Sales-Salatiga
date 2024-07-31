@@ -17,13 +17,13 @@ const AppDownload = () => {
             data-aos-delay="200"
           >
             <div className="flex h2">
-              <span className="text-danger">YOYO</span> &nbsp;
+              <span className="text-danger">Satriyo / Yoyo</span> &nbsp;
               <span className="text-white">Daihatsu</span>
             </div>
             <p>
-              Perkenalkan saya Yoyo, merupakan salah satu sales Dealer Daihatsu
-              Salatiga yang siap membantu anda dalam membeli unit kendaraan
-              idaman anda. Saya akan berusaha untuk :
+              Perkenalkan saya Satriyo biasa di panggil Yoyo, merupakan salah
+              satu sales Dealer Daihatsu Salatiga yang siap membantu anda dalam
+              membeli unit kendaraan idaman anda. Saya akan berusaha untuk :
             </p>
             <p className="pt-5" style={{ textAlign: "justify" }}>
               1. Memastikan Unit Kendaraan selalu ready <br></br>2. Memberikan
