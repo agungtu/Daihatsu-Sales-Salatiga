@@ -51,7 +51,7 @@ export const routes = [
     child: [
       {
         name: "Konsultasi Pembelian",
-        path: "https://api.whatsapp.com/send?phone=6285642689355",
+        path: "https://api.whatsapp.com/send?phone=6285642689355 target='_blank'",
       },
       {
         name: "Booking Service",

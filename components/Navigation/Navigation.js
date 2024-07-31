@@ -50,7 +50,9 @@ const Navigation = () => {
                     onClick={toggleNavbar}
                     offset={() => 100}
                     className="nav-link  dropdown-toggle dropdown-overlay"
-                    href={`/${value.path}`}
+                    href={`${value.path.startsWith("/") ? "" : "/"}${
+                      value.path
+                    }`}
                     id="navbarDropdown"
                     role="button"
                     data-bs-toggle="dropdown"
@@ -95,7 +97,7 @@ const Navigation = () => {
                   onClick={toggleNavbar}
                   offset={() => 100}
                   className="nav-link"
-                  href={`/${value.path}`}
+                  href={`${value.path.startsWith("/") ? "" : "/"}${value.path}`}
                 >
                   {value.name}
                 </Link>

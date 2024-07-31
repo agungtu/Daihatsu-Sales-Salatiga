@@ -86,16 +86,6 @@ const Team = () => {
                       {" "}
                       <h4 className="member-name">{value.name}</h4>
                       <p className="designation">{value.designation}</p>
-                      <button className="btn btn-danger">
-                        <a
-                          href="https://api.whatsapp.com/send?phone=6285642689355"
-                          target="_blank"
-                          className="download-button  text-white"
-                        >
-                          <i className="icofont icofont-phone"></i>
-                          6285642689355
-                        </a>{" "}
-                      </button>
                     </a>
                   </div>
                 </div>

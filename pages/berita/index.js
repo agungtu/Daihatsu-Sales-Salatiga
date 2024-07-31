@@ -69,12 +69,11 @@ const Beritaa = () => {
           ))}
         <div className="text-center p-4">
           <a
+            className="btn btn-danger icofont icofont-phone"
             href="https://api.whatsapp.com/send?phone=6285642689355"
             target="_blank"
           >
-            <button className="btn btn-danger icofont icofont-phone">
-              Hubungi Yoyo
-            </button>
+            Hubungi Yoyo
           </a>
         </div>
       </div>
