@@ -45,10 +45,10 @@ export const routes = [
       },
     ],
   },
-  //   {
-  //     name: "about",
-  //     path: "/about",
-  //   },
+  {
+    name: "News",
+    path: "/berita",
+  },
   //   {
   //     name: "services",
   //     path: "/services",
