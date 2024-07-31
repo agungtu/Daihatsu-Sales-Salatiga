@@ -45,7 +45,7 @@ const Navigation = () => {
           if (value.child)
             return (
               <li className="nav-item dropdown">
-                {pathname != "/" ? (
+                {!pathname.startsWith("/#") ? (
                   <Link
                     onClick={toggleNavbar}
                     offset={() => 100}
@@ -90,7 +90,7 @@ const Navigation = () => {
             );
           return (
             <li className="nav-item">
-              {pathname != "/" ? (
+              {!pathname.startsWith("/#") ? (
                 <Link
                   onClick={toggleNavbar}
                   offset={() => 100}
