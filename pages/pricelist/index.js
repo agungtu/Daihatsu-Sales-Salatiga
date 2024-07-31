@@ -9,7 +9,7 @@ const Pricelist = [
   {
     feedbackText:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam justo neque, aliquet sit amet elementum vel, vehicula eget eros.",
-    image: "/images/daihatsu-vehicles/promodaihatsu.jpg",
+    image: "/images/daihatsu-vehicles/promobaru.jpeg",
     image1: "/images/daihatsu-vehicles/1.png",
     image2: "/images/daihatsu-vehicles/2.png",
     image3: "/images/daihatsu-vehicles/3.png",
