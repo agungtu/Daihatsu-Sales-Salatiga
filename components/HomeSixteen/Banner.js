@@ -84,7 +84,7 @@ const Banner = () => {
 
         @media (max-width: 768px) {
           .homepage-slides-wrapper {
-            height: 22vh; /* Adjust height for mobile screens */
+            height: 24vh; /* Adjust height for mobile screens */
           }
 
           .slider-text h1 {

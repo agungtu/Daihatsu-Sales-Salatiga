@@ -49,7 +49,7 @@ const Navigation = () => {
                   <Link
                     onClick={(e) => e.preventDefault()}
                     offset={() => 100}
-                    className="nav-link dropdown-toggle dropdown-overlay"
+                    className="nav-link dropdown-toggle dropdown-overlay text-white"
                     href={`${value.path.startsWith("/") ? "" : "/"}${
                       value.path
                     }`}
@@ -64,7 +64,7 @@ const Navigation = () => {
                   <AnchorLink
                     onClick={(e) => e.preventDefault()}
                     offset={() => 100}
-                    className="nav-link dropdown-toggle dropdown-overlay"
+                    className="nav-link dropdown-toggle dropdown-overlay text-white"
                     href={`${value.path}`}
                     id={`navbarDropdown-${i}`}
                     role="button"
@@ -99,7 +99,7 @@ const Navigation = () => {
                 <Link
                   onClick={toggleNavbar}
                   offset={() => 100}
-                  className="nav-link"
+                  className="nav-link text-white"
                   href={`${value.path.startsWith("/") ? "" : "/"}${value.path}`}
                 >
                   {value.name}
@@ -108,7 +108,7 @@ const Navigation = () => {
                 <AnchorLink
                   onClick={toggleNavbar}
                   offset={() => 100}
-                  className="nav-link"
+                  className="nav-link text-white"
                   href={`${value.path}`}
                 >
                   {value.name}
@@ -132,11 +132,15 @@ const Navigation = () => {
     <div>
       <style jsx>{`
         #navbar {
-          background-color: #ff3544;
+          background-color: darkred;
         }
 
         #navbar.menu-shrink {
-          background-color: #ff3544;
+          background-color: darkred;
+        }
+
+        .text-white {
+          color: white !important;
         }
       `}</style>
       <nav
