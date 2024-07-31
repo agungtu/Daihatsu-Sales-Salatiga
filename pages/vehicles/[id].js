@@ -23,6 +23,7 @@ const VehicleType = () => {
         style={{
           position: "relative",
           textAlign: "center",
+          width: "100%",
         }}
       >
         <Navigation />
@@ -80,33 +81,24 @@ const VehicleType = () => {
               <tbody>
                 {data?.data?.promo?.map((pricing) => (
                   <tr>
-                    <td style={{}}>
-                      <span>{pricing?.dp?.value}</span>
-                      <span>{pricing?.dp?.desc}</span>
-                    </td>
-                    <td style={{}}>
-                      <span>{pricing?.credit?.value}</span>
-                      <span>{pricing?.credit?.desc}</span>
-                    </td>
-                    <td style={{}}>
-                      <span>{pricing?.interest?.value}%</span>
-                      <span>{pricing?.interest?.desc}</span>
-                    </td>
+                    <td>{pricing?.dp}</td>
+                    <td>{pricing?.credit}</td>
+                    <td>{pricing?.interest}</td>
                   </tr>
                 ))}
               </tbody>
             </table>
+            {data?.data?.youtube && (
+              <div className="yt-container">{data?.data?.youtube}</div>
+            )}
             <p className="p-3 " style={{ textAlign: "justify" }}>
               {data?.data?.desc2}
             </p>
           </div>
         </div>
-        {[1, 2, 3].map((index) => (
-          <div id="" style={{ paddingTop: "80px" }}>
-            <img
-              style={{ height: "91vh" }}
-              src={`/images/daihatsu-vehicles/${data?.id}-spek-${index}.jpg`}
-            ></img>
+        {data?.data?.spek?.map((index) => (
+          <div id="" style={{ width: "100%", maxHeight: "91vh" }}>
+            <img style={{}} src={index}></img>
           </div>
         ))}
       </div>
