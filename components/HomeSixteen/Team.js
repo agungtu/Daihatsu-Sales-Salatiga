@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const teamMemberData = [
   {
-    image: "/images/team/bang yo.jpeg",
+    image: "/images/bangyo.jpeg",
     name: "Yoyo",
     designation: "Daihatsu",
     // shortText:
