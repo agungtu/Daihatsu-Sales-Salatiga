@@ -44,16 +44,16 @@ const Navigation = () => {
         {routes.map((value, i) => {
           if (value.child)
             return (
-              <li className="nav-item dropdown">
+              <li className="nav-item dropdown" key={i}>
                 {!pathname?.startsWith("/#") ? (
                   <Link
-                    onClick={toggleNavbar}
+                    onClick={(e) => e.preventDefault()}
                     offset={() => 100}
-                    className="nav-link  dropdown-toggle dropdown-overlay"
+                    className="nav-link dropdown-toggle dropdown-overlay"
                     href={`${value.path.startsWith("/") ? "" : "/"}${
                       value.path
                     }`}
-                    id="navbarDropdown"
+                    id={`navbarDropdown-${i}`}
                     role="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
@@ -62,11 +62,11 @@ const Navigation = () => {
                   </Link>
                 ) : (
                   <AnchorLink
-                    onClick={toggleNavbar}
+                    onClick={(e) => e.preventDefault()}
                     offset={() => 100}
-                    className="nav-link  dropdown-toggle dropdown-overlay"
+                    className="nav-link dropdown-toggle dropdown-overlay"
                     href={`${value.path}`}
-                    id="navbarDropdown"
+                    id={`navbarDropdown-${i}`}
                     role="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
@@ -74,16 +74,19 @@ const Navigation = () => {
                     {value.name}
                   </AnchorLink>
                 )}
-                <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                  {value.child.map((value, i) => (
-                    <li key={i}>
+                <ul
+                  className="dropdown-menu"
+                  aria-labelledby={`navbarDropdown-${i}`}
+                >
+                  {value.child.map((child, j) => (
+                    <li key={j}>
                       <Link
                         onClick={toggleNavbar}
                         offset={() => -30}
                         className="dropdown-item"
-                        href={`${value.path}`}
+                        href={`${child.path}`}
                       >
-                        {value.name}
+                        {child.name}
                       </Link>
                     </li>
                   ))}
@@ -91,7 +94,7 @@ const Navigation = () => {
               </li>
             );
           return (
-            <li className="nav-item">
+            <li className="nav-item" key={i}>
               {!pathname?.startsWith("/#") ? (
                 <Link
                   onClick={toggleNavbar}
@@ -143,9 +146,8 @@ const Navigation = () => {
         <div className="container">
           {image &&
             image.map((value, i) => (
-              <Link className="navbar-brand" href="/">
+              <Link className="navbar-brand" href="/" key={i}>
                 <Image
-                  key={i}
                   src={value.image}
                   alt="App Mockup image"
                   width={200}
