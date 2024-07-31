@@ -23,24 +23,13 @@ const VehicleType = () => {
         style={{
           position: "relative",
           textAlign: "center",
-          // display: "flex",
-          // flexDirection: "column",
-          // justifyContent: "center",
-          // paddingTop: "50px",
         }}
       >
         <Navigation />
-        <div id="details" style={{ paddingTop: "80px", width: "80vw" }}>
+        <div id="details" style={{ paddingTop: "80px", margin: "auto" }}>
           <img style={{ height: "91vh" }} src={data?.data?.imageUrl}></img>
         </div>
-        <div
-          id="features"
-          style={{
-            height: "100vh",
-            paddingLeft: "100px",
-            paddingRight: "100px",
-          }}
-        >
+        <div>
           <div>{data?.data?.desc}</div>
           <div>
             <table className="table">
@@ -80,7 +69,7 @@ const VehicleType = () => {
                   style={{
                     fontWeight: "bold",
                     textTransform: "uppercase",
-                    widtr: "100%",
+                    width: "100%",
                   }}
                 >
                   <td>DP Mulai</td>
@@ -91,15 +80,15 @@ const VehicleType = () => {
               <tbody>
                 {data?.data?.promo?.map((pricing) => (
                   <tr>
-                    <td style={{ display: "flex" }}>
+                    <td style={{}}>
                       <span>{pricing?.dp?.value}</span>
                       <span>{pricing?.dp?.desc}</span>
                     </td>
-                    <td style={{ display: "flex" }}>
+                    <td style={{}}>
                       <span>{pricing?.credit?.value}</span>
                       <span>{pricing?.credit?.desc}</span>
                     </td>
-                    <td style={{ display: "flex" }}>
+                    <td style={{}}>
                       <span>{pricing?.interest?.value}%</span>
                       <span>{pricing?.interest?.desc}</span>
                     </td>
@@ -107,14 +96,21 @@ const VehicleType = () => {
                 ))}
               </tbody>
             </table>
+            <p className="p-3 " style={{ textAlign: "justify" }}>
+              {data?.data?.desc2}
+            </p>
           </div>
         </div>
-        {/* 
-        <section id="reviews" style={{ height: "100vh", paddingTop: "50px" }}>
-          Reviews of {id}
-        </section> */}
-        <Footer />
+        {[1, 2, 3].map((index) => (
+          <div id="" style={{ paddingTop: "80px" }}>
+            <img
+              style={{ height: "91vh" }}
+              src={`/images/daihatsu-vehicles/${data?.id}-spek-${index}.jpg`}
+            ></img>
+          </div>
+        ))}
       </div>
+      <Footer />
     </>
   );
 };
