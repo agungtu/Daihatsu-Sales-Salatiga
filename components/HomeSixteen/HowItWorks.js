@@ -30,7 +30,7 @@ const howItWorksData = [
   {
     image: "/images/team/Logo 1.svg",
     title: "Tanya Pembelian",
-    // text: "https://api.whatsapp.com/send?phone=6285642689355",
+    // text: "https://api.whatsapp.com/send?phone=6281331208226",
     // target: "_blank",
 
     duration: "800",
@@ -127,7 +127,7 @@ const HowItWorks = () => {
                 >
                   {/* <i className={value.icon}></i> */}
                   <a
-                    href="https://api.whatsapp.com/send?phone=6285642689355"
+                    href="https://api.whatsapp.com/send?phone=6281331208226"
                     target="_blank"
                   >
                     <Image
@@ -155,7 +155,7 @@ const HowItWorks = () => {
                   key={i}
                 >
                   <a
-                    href="https://api.whatsapp.com/send?phone=6285642689355"
+                    href="https://api.whatsapp.com/send?phone=6281331208226"
                     target="_blank"
                   >
                     {" "}

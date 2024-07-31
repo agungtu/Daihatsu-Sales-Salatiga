@@ -43,7 +43,7 @@ const AppDownload = () => {
               >
                 <a
                   className=" download-btn"
-                  href="https://api.whatsapp.com/send?phone=6285642689355"
+                  href="https://api.whatsapp.com/send?phone=6281331208226"
                   target="_blank"
                 >
                   <span>

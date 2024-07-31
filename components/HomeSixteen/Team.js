@@ -80,7 +80,7 @@ const Team = () => {
                       </div> */}
                     </div>
                     <a
-                      href="https://api.whatsapp.com/send?phone=6285642689355"
+                      href="https://api.whatsapp.com/send?phone=6281331208226"
                       target="_blank"
                     >
                       {" "}

@@ -51,27 +51,27 @@ export const routes = [
     child: [
       {
         name: "Konsultasi Pembelian",
-        path: "https://api.whatsapp.com/send?phone=6285642689355 target='_blank'",
+        path: "https://api.whatsapp.com/send?phone=6281331208226 target='_blank'",
       },
       {
         name: "Booking Service",
-        path: "https://api.whatsapp.com/send?phone=6285642689355 target='_blank'",
+        path: "https://api.whatsapp.com/send?phone=6281331208226 target='_blank'",
       },
       {
         name: "Simulasi Kredit",
-        path: "https://api.whatsapp.com/send?phone=6285642689355 target='_blank'",
+        path: "https://api.whatsapp.com/send?phone=6281331208226 target='_blank'",
       },
       {
         name: "Test Drive",
-        path: "https://api.whatsapp.com/send?phone=6285642689355 target='_blank'",
+        path: "https://api.whatsapp.com/send?phone=6281331208226 target='_blank'",
       },
       {
         name: "Tukar Tambah",
-        path: "https://api.whatsapp.com/send?phone=6285642689355 target='_blank'",
+        path: "https://api.whatsapp.com/send?phone=6281331208226 target='_blank'",
       },
       {
         name: "Spare Part",
-        path: "https://api.whatsapp.com/send?phone=6285642689355 target='_blank'",
+        path: "https://api.whatsapp.com/send?phone=6281331208226 target='_blank'",
       },
     ],
   },

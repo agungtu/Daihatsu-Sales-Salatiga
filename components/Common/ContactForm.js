@@ -90,19 +90,19 @@ const ContactForm = () => {
               <div className="single-contact-info">
                 <i className="icofont-envelope"></i>
                 <h3 className="tezx">E-mail : </h3>
-                <p className="tezx">Satriyowidiyantoro7@gmail.com</p>
+                <p className="tezx">marketingdaihatsusalatiga@gmail.com</p>
               </div>
             </div>
 
             <div className="col-md-4 col-lg-4 col-sm-6">
               <div className="single-contact-info">
                 <a
-                  href="https://api.whatsapp.com/send?phone=6285642689355"
+                  href="https://api.whatsapp.com/send?phone=6281331208226"
                   target="_blank"
                 >
                   <i className="icofont icofont-phone"></i>
                   <h3 className="tezx">Nomor Telepon :</h3>
-                  <p className="tezx">6285642689355</p>
+                  <p className="tezx">6281331208226</p>
                 </a>
               </div>
             </div>

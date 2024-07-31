@@ -49,7 +49,7 @@ const Blog = () => {
                   <p>Sejalan dengan tagline Daihatsu Sahabatku</p>
 
                   <Link
-                    href="https://api.whatsapp.com/send?phone=6285642689355"
+                    href="https://api.whatsapp.com/send?phone=6281331208226"
                     target="_blank"
                     className="default-button"
                   >
@@ -91,7 +91,7 @@ const Blog = () => {
                   <p>Daihatsu resmi meluncurkan penyegaran New Terios</p>
 
                   <Link
-                    href="https://api.whatsapp.com/send?phone=6285642689355"
+                    href="https://api.whatsapp.com/send?phone=6281331208226"
                     target="_blank"
                     className="default-button"
                   >
@@ -133,7 +133,7 @@ const Blog = () => {
                   <p>Daihatsu turut hadir meramaikan pameran otomotif</p>
 
                   <Link
-                    href="https://api.whatsapp.com/send?phone=6285642689355"
+                    href="https://api.whatsapp.com/send?phone=6281331208226"
                     target="_blank"
                     className="default-button"
                   >

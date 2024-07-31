@@ -75,15 +75,15 @@ const Counter = () => {
             </div>
             <div className="slide-button mt-4">
               <a
-                href="https://api.whatsapp.com/send?phone=6285642689355"
+                href="https://api.whatsapp.com/send?phone=6281331208226"
                 target="_blank"
                 className="download-button"
               >
                 <i className="icofont icofont-phone"></i>
-                6285642689355
+                6281331208226
               </a>
               <a
-                href="https://api.whatsapp.com/send?phone=6285642689355"
+                href="https://api.whatsapp.com/send?phone=6281331208226"
                 target="_blank"
                 className="learn-more-button icofont icofont-phone"
               >
